@@ -103,10 +103,10 @@ HAVING prixunitaire > (SELECT AVG(prixunitaire) FROM laboratoire2.article);
 
 -- Query 16 Le montant total de la commande numéro 1 avant et après la taxe de 15%.
 
-SELECT SUM(prixunitaire*quantite) AS avant_taxe, SUM(prixunitaire*quantite)*1.15 AS apres_taxe
-FROM laboratoire2.article
-INNER JOIN laboratoire2.lignecommande ON lignecommande.noarticle = article.noarticle
-WHERE nocommande = 1;
+--SELECT SUM(prixunitaire*quantite) AS avant_taxe, SUM(prixunitaire*quantite)*1.15 AS apres_taxe
+--FROM laboratoire2.article
+--INNER JOIN laboratoire2.lignecommande ON lignecommande.noarticle = article.noarticle
+--WHERE nocommande = 1;
 			
 
 					
